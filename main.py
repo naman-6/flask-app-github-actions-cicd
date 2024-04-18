@@ -8,6 +8,7 @@ api = Api(app)
 def hello_world():
     return "<p>Hello, World!</p>"
 
+
 class DemoApiEndpoint(Resource):
     def __init__(self):
         self.post_args = reqparse.RequestParser()
