@@ -13,3 +13,5 @@ EXPOSE 5000
 RUN python3 -m pytest
 
 CMD ["python3", "main.py"]
+
+
