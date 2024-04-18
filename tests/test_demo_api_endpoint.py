@@ -10,11 +10,11 @@ def test_get_api_endpoint():
 def test_post_api_endpoint():
     with app.test_client() as c:
         response = c.post('api/DemoApiEndpoint', json={
-            "name": "Vincent"
+            "name": "User"
         })
         assert response.status_code == 200
         json_response = response.get_json()
-        assert json_response == {'message': 'Nice to meet you, Vincent!'}
+        assert json_response == {'message': 'Nice to meet you, User!'}
 
 # test_api_endpoint()
 # test_post_api_endpoint()
